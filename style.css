@@ -1,7 +1,7 @@
 :root {
     --brand-clr:#4900a3;
     --clr-white:#f9f9fa;
-    --clr-links:#333;
+    --clr-links:#000000;
 
     --ff: 'DM Sans', sans-serif;
 
@@ -20,6 +20,7 @@
 body {
     font-family: var(--ff);
     color: var(--clr-links);
+    line-height: 1.4;
 }
 
 img {
@@ -133,9 +134,13 @@ section {
 }
 
 
-.navbar-links li:hover .nav-links {
-    background: #4900a37c;
-    color: var(--clr-links);
+.navbar-links .cta:hover {
+    background: #000000;
+    color: var(--clr-white);
+}
+
+.nav-links:hover {
+    color:hsla(0, 0%, 20%, 0.75)
 }
 
 .logo {
@@ -249,8 +254,7 @@ section {
 }
 
 .main-header {
-    font-size: 3.75rem;
-    line-height: 65px;
+    font-size: 4.375rem;
     margin: 0;
     
     animation: pageLoad 1.5s cubic-bezier(.62,-0.01,.46,1.01), fadeIn 1.5s cubic-bezier(.62,-0.01,.46,1.01);
@@ -316,7 +320,9 @@ section {
     -moz-animation-fill-mode: forwards;
 }
 
-
+.btn {
+    cursor: pointer;
+}
 
 @media (max-width:650px) {
     section {
@@ -363,8 +369,16 @@ section {
 
 .trusted {
     display: block;
-    justify-self: start;
+    text-align: center;
+    justify-self: center;
     font-size: 1.25rem;
+}
+
+@media (max-width:900px) {
+    .logo-holder {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.875rem;
+    }
 }
 
 @media (max-width:650px) {
@@ -407,6 +421,12 @@ section {
     border-radius: 3px;
 }
 
+@media(max-width:900px) {
+    .feature-grid {
+        gap: 0.625rem;
+    }
+}
+
 @media(max-width:650px) {
     .feature-heading {
         line-height: 1.1;
@@ -415,7 +435,6 @@ section {
     .feature-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem;
         margin-top: 1.875rem;
     }
 
@@ -481,7 +500,7 @@ input[type="text"], input[type="email"] {
     }
 
     .btn-form {
-        margin-top: 0.625rem;
+        margin-top: 1.25rem;
     }
 }
 

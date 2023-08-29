@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gravity app</title>
+    <meta name="description" content="The scheduling tool to help you stay organized on Earth & beyond. With multi-device sync, including those on spacecraft, you'll never miss a meeting or important event no matter where you are in the galaxy.">
+    <meta property="og:title" content="Calendar: The one app you need to rule time and space" />
+    <meta property="og:description" content="The scheduling tool to help you stay organized on Earth & beyond. With multi-device sync, including those on spacecraft, you'll never miss a meeting or important event no matter where you are in the galaxy." />
+    <meta property="og:image" content="https://uploads-ssl.webflow.com/64ea6b043feded5cf7b22d11/64ea6eaf1d50b02423d4b5a1_Calendar-app.jpg" />
+    <title>Calendar: The one app you need to rule time and space</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +24,9 @@
             </a>
             <div class="navbar-links">
                 <ul>
-                    <li><a class="nav-links" href="#">Features</a></li>
-                    <li><a class="nav-links" href="#">Request a demo</a></li>
-                    <li><a class="nav-links cta" href="#">Signup for the waitlist</a></li>
+                    <li><a class="nav-links" href="#features">Features</a></li>
+                    <li><a class="nav-links" href="#request-a-demo">Request a demo</a></li>
+                    <li><a class="nav-links cta" href="mailto:jhmdesigns.1@gmail.com?subject=Re:Space">Signup for the waitlist</a></li>
                 </ul>
             </div>
     </nav>
@@ -30,80 +34,80 @@
         <div class="container centered">
             <h1 class="main-header">A calendar for space travel</h1>
             <p class="main-paragraph">The scheduling tool to help you stay organized on Earth & beyond. With multi-device sync, including those on spacecraft, you'll never miss a meeting or important event no matter where you are in the galaxy.</p>
-            <button class="btn main">Join the waiting list for early access</button>
-            <img class="main-image" src="Calendar-app.jpg" alt="Calendar app image">
+            <a href="mailto:jhmdesigns.1@gmail.com?subject=Re:Space"><button class="btn main">Join the waiting list for early access</button></a>
+            <img class="main-image" src="Calendar-app.jpg" alt="Calendar app interface showing time travel details">
         </div>
     </section>
     <section>
         <div class="container">
-            <p class="trusted">Trusted by:</p>
+            <p class="trusted">Trusted by</p>
             <div class="logo-holder">
+                <img class="trusted-logos" src="Logos/Space-dot-com.svg" alt="Space.com logo">
+                <img class="trusted-logos" src="Logos/United-Federation-of-Planets.svg" alt="United Federation of Planets logo">
                 <img class="trusted-logos" src="Logos/Avenue-5.svg" alt="Avenue 5 logo">
                 <img class="trusted-logos" src="Logos/SpaceX.svg" alt="SpaceX logo">
-                <img class="trusted-logos" src="Logos/United-Federation-of-Planets.svg" alt="United Federation of Planets logo">
                 <img class="trusted-logos" src="Logos/ESA.svg" alt="ESA logo">
-                <img class="trusted-logos" src="Logos/Space-dot-com.svg" alt="Space.com logo">
                 <img class="trusted-logos" src="Logos/NASA.svg" alt="NASA logo">
             </div>
         </div>
     </section>
-    <section>
+    <section id="features">
         <div class="container">
             <h2 class="feature-heading">Features for every need</h2>
             <div class="feature-grid">
                 <div class="card">
-                    <img class="feature-image" src="Feature/Daily-digest.jpg" alt="Daily digest image">
+                    <img class="feature-image" src="Feature/Daily-digest.jpg" alt="Calendar Daily Digest feature, showing three sample event types">
                     <h3>Daily digest</h3>
                     <p>Confusion is over. Daily Digest makes your calendar easy to use so you know exactly what's next.</p>
                 </div>
                 <div class="card">
-                    <img class="feature-image" src="Feature/AI-assistant.jpg" alt="AI assistant image">
+                    <img class="feature-image" src="Feature/AI-assistant.jpg" alt="Calendar AI Assistant feature, showing the various features AI will automatically write for you.">
                     <h3>AI assistant</h3>
                     <p>No writing required. AI will take care of your rescheduling messages.</p>
                 </div>
                 <div class="card">
-                    <img class="feature-image" src="Feature/Checker.jpg" alt="Checker image">
+                    <img class="feature-image" src="Feature/Checker.jpg" alt="Calendar Checker feature, showing  three sample calendar event types ">
                     <h3>Checker</h3>
                     <p>Checker will find & resolve every conflict whatever orbit you're on.</p>
                 </div>
                 <div class="card">
-                    <img class="feature-image" src="Feature/Calculator.jpg" alt="Calculator image">
+                    <img class="feature-image" src="Feature/Calculator.jpg" alt="Calendar Calculator feature, showing today's meetings in the Calendar interface">
                     <h3>Calculator</h3>
                     <p>No more math for you. Temporal field, orbital radiation and numbers. Calculator does it all.</p>
                 </div>
                 <div class="card">
-                    <img class="feature-image" src="Feature/Time-zoner.jpg" alt="Time Zoner image">
+                    <img class="feature-image" src="Feature/Time-zoner.jpg" alt="Calendar Time Zoner feature, showing temporal field adjustments in the Calendar interface">
                     <h3>Time Zoner</h3>
                     <p>You'd expect Calculator & Checker to do this. This is another feature.</p>
                 </div>
                 <div class="card">
-                    <img class="feature-image" src="Feature/Connector.jpg" alt="Connector">
+                    <img class="feature-image" src="Feature/Connector.jpg" alt="Calendar Connector feature, showing two events needing rescheduling">
                     <h3>Connector</h3>
                     <p>No more socialization required. Connectors finds and books the people you need to meet.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="request-a-demo">
         <div class="container">
             <div class="form-content-wrapper">
                 <h2>Request a demo</h2>
                 <p>Experience the future of space travel and see for yourself how it can revolutionize your space travel planning.</p>
             </div>
-            <form action="">
+            <form id="form" action="" method="POST">
                 <div class="field-wrapper">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="" required>
+                    <input type="text" name="name" id="name" required>
                 </div>
                 <div class="field-wrapper">
                     <label for="email">Email Adress</label>
-                    <input type="email" name="email" id="" required>
+                    <input type="email" name="email" id="mail" required>
                 </div>
                 <div class="field-wrapper">
                     <label for="company">Company</label>
-                    <input type="text" name="company" id="">
+                    <input type="text" name="company" id="company">
                 </div>
-                <button class="btn btn-form">Submit</button>
+                <button type="submit" class="btn btn-form">Submit</button>
             </form>
         </div>
     </section>
